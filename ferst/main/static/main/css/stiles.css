@@ -1,0 +1,42 @@
+	body {	font-family: calibri;
+		margin-top:0px;
+		background-color: #506050;
+		font-size: 11pt;
+                }
+	td { font-family: calibri;
+		font-size: 11pt;
+	}
+    #counters { visible: none; }
+    .td01 {
+	background-color: #C0D0C0;
+    }
+    .td02 {
+	background-color: #D0E0D0;
+    }
+    .td03 {
+	background-color: #C0D0C0;
+    }
+    .book_image {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: 0px;
+	margin-right: 10px;
+    }
+    #blink1 {
+    -webkit-animation: blink1 3s linear infinite;
+    animation: blink1 3s linear infinite;
+    }
+    @-webkit-keyframes blink1 {
+    0% { color: rgba(255, 0, 0, 0); }
+    50% { color: rgba(255, 0, 0, 1); }
+    100% { color: rgba(255, 0, 0, 1); }
+    }
+    @keyframes blink1 {
+    0% { color: rgba(255, 0, 0, 1); }
+    50% { color: rgba(255, 0, 0, 0); }
+    100% { color: rgba(255, 0, 0, 1); }
+    }
+
+	div.c0ebb7 {padding: 0px !important; text-align: left !important;font-size: 12px !important; background-color: #ffffff !important; border: 1px solid #e0e0e0e !important;}
+	.c0ebb7 .text {color: #000000 !important; font-size: 12px !important;padding: 3px 0 !important; line-height: normal !important;}
+	.c0ebb7 .host {color: #006600;font-weight: normal;font-size: 9px !important; padding: 0px 0 !important; line-height: normal !important;}

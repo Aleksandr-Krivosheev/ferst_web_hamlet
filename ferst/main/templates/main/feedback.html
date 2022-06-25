@@ -1,0 +1,46 @@
+{% extends 'main/main.html' %}
+
+{% block title %}
+Книжный магазин &laquo;Русская деревня&raquo; - Редкая литература
+{% endblock %}
+
+{% block content %}
+
+<td valign="top">
+
+
+    <table width="100%" height="50%" cellspacing="20px" cellpadding="20px" border="0">
+        <tbody>
+        <tr>
+            <td valign="top" align="left">
+                Вы можете оставить свой отзыв о работе книжного магазина и о работе данного сайта.
+                <br><br>
+                Способ №1. Ваши замечания, пожелания и вопросы будут отправлены в администрацию магазина. Нам очень
+                важно знать Ваше мнение. Если хотите, можете указать свой электронный почтовый адрес, в этом случае мы
+                сможем отправить Вам ответ по электронной почте.<br>
+                <form action="addfeedback.asp" method="post">
+                    <br>
+                    Отзыв:<br>
+                    <textarea name="feedback" cols="40" rows="7"></textarea>
+                    <br>
+                    Не забудьте указать имя и контактную информацию.<br><br>
+
+                    Введите, пожалуйста, указанный код: 0578<br>
+                    <input type="text" name="surname" maxlength="50&quot;">
+                    <br><br>
+                    <input type="submit" value="Отправить">
+                </form>
+
+                <br>
+                Способ №2. Вы можете <a href="http://www.afisha.ru/msk/shop/79251/" target="_blank">оставить свой
+                отзыв</a> на сайте afisha.ru: информация о нашем магазине появилась там не так давно. Нам будет очень
+                полезно знать объективную оценку нашей работы. Заранее Вам благодарны!
+
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+</td>
+{% endblock %}

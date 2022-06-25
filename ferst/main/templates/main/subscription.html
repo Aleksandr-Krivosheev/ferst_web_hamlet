@@ -1,0 +1,35 @@
+{% extends 'main/main.html' %}
+
+{% block title %}
+Книжный магазин &laquo;Русская деревня&raquo; - Редкая литература
+{% endblock %}
+
+{% block content %}
+
+<td valign="top">
+
+
+    <div align="center"><font size="+1"><b>Оформление подписки</b></font></div>
+    <table width="100%" height="50%" cellspacing="20px" cellpadding="20px" border="0">
+        <tbody>
+        <tr>
+            <td valign="top" align="left">
+                Вы можете оставить свой электронный почтовый адрес для получения уведомлений об&nbsp;обновлении книжного
+                каталога. Письма будут приходить не&nbsp;чаще одного-двух раз в месяц. Отказаться от рассылки вы сможете
+                в любое время, перейдя по ссылке, которая будет присутствовать в конце каждого письма.
+                <br>
+                <form action="addemail.asp" method="post">
+                    Ваш адрес (e-mail): <input type="text" name="email" value="">
+                    <input type="submit" value="Подписаться на рассылку">
+                </form>
+                <br>
+                Пожалуйста, подтвердите Ваше&nbsp;согласие на&nbsp;получение&nbsp;уведомлений об&nbsp;обновлении&nbsp;каталога
+                в&nbsp;первом полученном письме.
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+</td>
+{% endblock %}

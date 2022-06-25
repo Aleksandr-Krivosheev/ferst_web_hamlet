@@ -1,0 +1,52 @@
+{% extends 'main/main.html' %}
+
+{% block title %}
+Книжный магазин &laquo;Русская деревня&raquo; - Редкая литература
+{% endblock %}
+
+{% block content %}
+<tr>
+    <td valign="top">
+
+        <div align=center><font size="+1"><b>Полный каталог книг</b></font></div>
+        <br>
+
+        <div align="center">Страницы:&nbsp;&nbsp;
+
+        </div>
+        <div align="center">
+            <font color="#808080">
+                предыдущая страница</font>
+            &nbsp;&nbsp;&nbsp;
+            <a href="/?view=full&page=2" title="Страница 2">
+                следующая страница</a>
+        </div>
+        <br>
+
+        <table border=0 cellspacing=0 cellpadding=5px>
+            <tr>
+                <td class="td02" align=center>Дата<br>поступления</td>
+                <td class="td02" align=center>Книга</td>
+                <td class="td02" align=center>&nbsp;&nbsp;Цена,&nbsp;р.&nbsp;&nbsp;</td>
+            </tr>
+        </table>
+        <br>
+        <div align="center">Страницы:&nbsp;&nbsp;
+
+        </div>
+        <div align="center">
+            <font color="#808080">
+                предыдущая страница</font>
+            &nbsp;&nbsp;&nbsp;
+            <a href="/?view=full&page=2" title="Страница 2">
+                следующая страница</a>
+        </div>
+        <br>
+    </td>
+</tr>
+{% endblock %}
+
+{% block topbook %}
+<br>
+<b>Популярные книги</b><br><br>
+{% endblock %}

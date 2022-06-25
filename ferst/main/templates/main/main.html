@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="shortcut icon" href="{% static 'main/images/favicon.ico' %}" type="image/png"/>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main/css/stiles.css' %}">
+</head>
+
+<body link="#203020" alink="#406010" vlink="#405030">
+
+<a name="top"></a>
+
+<table border="0" cellspacing="0" cellpadding="0" align="center">
+
+    <tr height="113px">
+        <td colspan=3 align=center valign=middle>
+            <a href="{% url 'home'%}"><img src="{% static 'main/images/hamlet-books-top.jpg' %}"  alt="ПК &laquo;Русская деревня&raquo;" border=0></a>
+        </td>
+    </tr>
+
+    <tr height="100px">
+
+        <td class="td01" width="200px" valign="top"><img src="{% static 'main/images/hamlet-books-right.jpg' %}"
+                                                         alt="ПК &laquo;Русская деревня&raquo;" border="0">
+            <!--<br><img src="/img/hamlet-books-left.jpg" alt="ПК &laquo;Русская деревня&raquo;" border=0>--></td>
+
+        <td bgcolor=#C0D0C0 align=center valign=middle>
+            <table width="680px" border=0>
+                <tr>
+                    <td align=center>
+                        <font size=+2 color="#406010">
+                            <b><a href="{% url 'home'%}">Книжный магазин &laquo;Русская деревня&raquo;</a></b>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td align=center>
+                        <font size=+2 color="#406010">
+                            <b>8 (495) 922-60-35</b>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td align=center>
+                        <font color="#406010" size="-1">
+                            <b>Продажа редкой и малотиражной литературы, столичных и провинциальных изданий,<br>
+                                неформальной литературы различных направлений. Доставка по России и Белоруссии.</b>
+                            <br><br>
+                            <table width=90%>
+                                <tr>
+                                    <td align=left>
+                                        <div>
+                                            <font color="#406010" size="-1">
+                                                <b>Наш адрес:</b> Москва, Петровский бульвар, д. 14/29, стр. 3. Схема
+                                                прохода находится <a href="{% url 'contacts'%}" title="Посмотреть на карте"
+                                                                     target="_blank">здесь</a>.<br>
+                                                <b>Проезд:</b> метро &laquo;Трубная&raquo;<br>
+                                                <b>График работы:</b> ежедневно, кроме воскресенья, с 11 до 20 часов<br>
+                                            </font>
+                                        </div>
+
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </font>
+                        <div align=center>
+                        </div>
+                        </font>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td class="td01" width=200px valign=top>
+            <img src="{% static 'main/images/hamlet-books-left.jpg' %}" alt="ПК &laquo;Русская деревня&raquo;" border=0>
+        </td>
+    </tr>
+    <tr height="600px">
+        <td bgcolor=#C0D0C0 width=200px align=left valign=top>
+            <br>
+            &nbsp;&nbsp;<b>Каталоги книг</b>
+            <br>
+            &nbsp;&nbsp;<a href="{% url 'home'%}" title="Полный каталог книг, разделённый на страницы">Полный каталог</a>
+            <br>
+            &nbsp;&nbsp;<a href="{% url 'month'%}" title="Каталог, отсортированный по месяцам">Датированный каталог</a>
+            <br>
+            &nbsp;&nbsp;<a href="{% url 'tags'%}" title="Каталог, отсортированный по тематикам">Тематический каталог</a>
+            <br>
+            &nbsp;&nbsp;<a href="{% url 'authors'%}" title="Каталог авторов">Каталог авторов</a>
+            <br>
+            &nbsp;&nbsp;<a href="{% url 'bookinisted'%}" title="Букинистические издания">Букинистическое издание</a>
+            <br>
+            &nbsp;&nbsp;<a href="{% url 'theonlyone'%}" title="Книги в единственном экземпляре">Единственный экземпляр</a>
+            <br>
+            &nbsp;&nbsp;<a href="{% url 'abstract'%}" title="Авторефераты">Авторефераты</a>
+            <br>
+            &nbsp;&nbsp;<a href="{% url 'cd_and_dvd'%}" title="Каталог компакт-дисков и DVD">CD и DVD</a>
+            <br>
+            <br>
+
+            <form id=f name=f action="default.asp" method=get cellspacing=0px cellpadding=0px>
+                &nbsp;&nbsp;<b>Поиск книг</b>
+                <input type=hidden name=view value=search>
+                <br>
+                &nbsp;&nbsp;<input type=text name=word value="" style="width:90%">
+                <br>
+                &nbsp;&nbsp;<input type=submit value="Найти">
+            </form>
+            &nbsp;&nbsp;<b>Покупка книг</b>
+            <br>
+            &nbsp;&nbsp;<a href="{% url 'about_prices'%}" title="О цене и ценности книг">О цене и ценности книг</a>
+            <br>
+            &nbsp;&nbsp;<a href="{% url 'order'%}" title="Порядок оформления заказа">Оплата и доставка</a>
+            <br>
+            &nbsp;&nbsp;<a href="{% url 'basket'%}" title="Просмотр содержимого корзины и оформление заказа">Корзина</a>
+            <br>
+            <br>
+
+            &nbsp;&nbsp;<b>Рассылка новостей</b>
+            &nbsp;&nbsp;<a href="{% url 'subscription'%}" title="Оформление подписки на новости сайта">Оформление
+            подписки</a>
+            <br>
+            <br>
+
+            &nbsp;&nbsp;<b>Книжный магазин</b>
+            <br>
+            &nbsp;&nbsp;<a href="{% url 'about'%}" title="Краткая информация о магазине">О магазине</a>
+            <br>
+            &nbsp;&nbsp;<a href="{% url 'contacts'%}" title="Адрес, телефоны, почта, проезд">Контактная информация</a>
+            <br>
+            &nbsp;&nbsp;<a href="{% url 'feedback'%}" title="Книга отзывов и предложений">Оставить отзыв</a>
+            <br>
+            <br>
+            &nbsp;&nbsp;<a href="https://www.facebook.com/hamletbooks/" target="_blank"><img src="{% static 'main/images/facebook-logo.gif' %}"
+                                                                                             border="0"></a>
+            <br>
+            <br>
+
+
+            <br>
+            <br>
+
+        </td>
+        <td bgcolor=#E0F0E0 width="680px" valign=top>
+            <table width="680px" height=1000px border=0 cellspacing=0 cellpadding=10px>
+               {% block content %}{% endblock %}
+            </table>
+
+        </td>
+        <td rowspan=2 bgcolor=#C0D0C0 width=200px valign=top align=center>
+            <table width=100% height=100% border=0 cellspacing=0 cellpadding=10px>
+                <tr>
+                    <td align=left valign=top>
+
+                        &nbsp;&nbsp;<a href="/?view=cart&action=edit"
+                                       title="Просмотр содержимого корзины и оформление заказа"><font size="+2">Ваша
+                        корзина</font></a>
+                        <br>
+                        <br>
+
+                        <div style="padding: 0 10px">
+                            <font size="-1">Если Вам понравился наш магазин, пожалуйста, нажмите кнопку внизу и&nbsp;поделитесь
+                                информацией о&nbsp;нём с&nbsp;другими людьми. Для нас это очень важно! Спасибо.</font>
+                            <br/>
+                            <script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+                            <div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none"
+                                 data-yashareQuickServices="vkontakte,facebook,twitter,moimir,lj,gplus"></div>
+                        </div>
+                        <br/>
+
+
+                        &nbsp;&nbsp;<b>Тематический каталог</b>
+                        <font size="-2"><br><br></font>
+                        <div align=center>
+                            <a href="{% url 'tags'%}" title="Тематический каталог">
+                                <img src="{% static 'main/images/hamlet-thematics-crop-resize.jpg' %}" alt="Тематический каталог" border=0>
+                            </a>
+                        </div>
+                        <hr>
+                        <br>
+                        <b>Редкие книги</b><br>
+                        <a href="{% url 'bookinisted'%}" title="Букинистические издания">Букинистические издания</a>
+                        <br>
+                        <a href="{% url 'theonlyone'%}" title="Книги в единственном экземпляре">Единственные экземпляры</a>
+                        <br>
+                        <hr>
+                        {% block topbook %}{% endblock %}
+                    </td>
+                </tr>
+                <tr>
+                    <td align=right valign=bottom>
+                        <!--img src="/img/hamlet-last-book.jpg" border=0-->
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td align=left bgcolor=#C0D0C0><font size=-3><a rel="nofollow" href="/?view=admin">.</a></font></td>
+        <td bgcolor=#C0D0C0>
+            <table width=100% border=0 cellspacing=0 cellpadding=0>
+                <tr>
+                    <td align=left valign=top bgcolor=#C0D0C0>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<a href="#top">К&nbsp;началу&nbsp;страницы</a>
+                    </td>
+                    <td align=right valign=top bgcolor=#C0D0C0>
+                        &copy;&nbsp;2003&ndash;2022 <a href="{% url 'home'%}" title="Производственный кооператив ''Русская деревня''">ПК
+                        &laquo;Русская деревня&raquo;</a>&nbsp;<br><br>
+                        <font size="-3" color="black">При оформлении сайта использованы фрагменты картины М. Колерова
+                            &laquo;Книжная полка&raquo;, любезно предоставленной автором.</font>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <!--td bgcolor=#C0D0C0 width=200px valign=top></td-->
+    </tr>
+
+    <tr height=3px>
+        <td colspan=2>&nbsp;</td>
+    </tr>
+
+    <tr>
+
+        <td align=right valign=top>&nbsp;</td>
+        <td align=left valign=top>
+
+
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" align="center">
+
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

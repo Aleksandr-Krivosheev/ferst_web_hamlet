@@ -1,0 +1,28 @@
+{% extends 'main/main.html' %}
+
+{% block title %}
+Книжный магазин &laquo;Русская деревня&raquo; - Редкая литература
+{% endblock %}
+
+{% block content %}
+
+	<td valign="top">
+
+
+			<div align="center"><a href="{% url 'tags'%}">Тематический каталог</a>
+				<h2><font color="darkgreen">Автореферат</font></h2></div>
+
+			<table cellspacing="0" cellpadding="5px" border="0">
+			<tbody><tr>
+			<td class="td02" align="center">Дата<br>поступления</td>
+			<td class="td02" align="center">Книга</td>
+			<td class="td02" align="center">&nbsp;&nbsp;Цена,&nbsp;р.&nbsp;&nbsp;</td>
+			</tr>
+
+
+
+			</tbody></table>
+
+
+	</td>
+{% endblock %}

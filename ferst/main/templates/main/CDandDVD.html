@@ -1,0 +1,61 @@
+{% extends 'main/main.html' %}
+
+{% block title %}
+Книжный магазин &laquo;Русская деревня&raquo; - Редкая литература
+{% endblock %}
+
+{% block content %}
+
+<td valign="top">
+
+
+    <div align="center"><a href="{% url 'tags'%}">Тематический каталог</a>
+        <h2><font color="darkgreen">CD и DVD</font></h2></div>
+
+    <div align="center">Страницы:&nbsp;&nbsp;
+        <font size="+1"><b>1</b></font>
+        &nbsp;
+        <a href="/?view=cat&amp;id=121&amp;page=2" title="Страница 2">2</a>
+        &nbsp;
+
+    </div>
+    <div align="center">
+        <font color="#808080">
+            предыдущая страница</font>
+        &nbsp;&nbsp;&nbsp;
+        <a href="/?view=cat&amp;id=121&amp;page=2" title="Страница 2">
+            следующая страница</a>
+    </div>
+    <br>
+    <table cellspacing="0" cellpadding="5px" border="0">
+        <tbody>
+        <tr>
+            <td class="td02" align="center">Дата<br>поступления</td>
+            <td class="td02" align="center">Книга</td>
+            <td class="td02" align="center">&nbsp;&nbsp;Цена,&nbsp;р.&nbsp;&nbsp;</td>
+        </tr>
+
+
+        </tbody>
+    </table>
+
+    <br>
+    <div align="center">Страницы:&nbsp;&nbsp;
+        <font size="+1"><b>1</b></font>
+        &nbsp;
+        <a href="/?view=cat&amp;id=121&amp;page=2" title="Страница 2">2</a>
+        &nbsp;
+
+    </div>
+    <div align="center">
+        <font color="#808080">
+            предыдущая страница</font>
+        &nbsp;&nbsp;&nbsp;
+        <a href="/?view=cat&amp;id=121&amp;page=2" title="Страница 2">
+            следующая страница</a>
+    </div>
+    <br>
+
+
+</td>
+{% endblock %}
